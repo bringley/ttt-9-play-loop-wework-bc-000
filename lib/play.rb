@@ -31,8 +31,16 @@ def turn(board)
     move(board, index)
     display_board(board)
   else
+    puts "Not a valid move!"
     turn(board)
   end
 end
 
 # Define your play method below
+def play(board)
+  counter = 0
+  while counter < 9 
+  counter += 1 
+  turn(board)
+  end
+end
